@@ -30,8 +30,8 @@ class WeatherController extends IntermediateController {
 	private $settingsMapper;
 	private $metric;
 	private $config;
-	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
-	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
+	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&lang=de&q=";
+	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&lang=de&q=";
 
 	public function __construct ($appName, IConfig $config, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
